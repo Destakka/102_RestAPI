@@ -10,6 +10,10 @@ import com.example.pam_act8.repository.KontakRepository
 class InsertViewModel(private val kontakRepository: KontakRepository) : ViewModel() {
     var insertKontakState by mutableStateOf(InsertUiState())
         private set
+
+    fun updateInsertKontakState(insertUiEvent: InsertUiEvent) {
+        insertKontakState = InsertUiState(insertUiEvent = insertUiEvent)
+    }
 }
 
 data class InsertUiEvent(
