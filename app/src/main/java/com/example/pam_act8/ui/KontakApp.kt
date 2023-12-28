@@ -39,10 +39,7 @@ fun KontakApp(
                 .fillMaxSize()
                 .padding(it)
         ){
-            HomeScreen(
-                kontakUIState = homeViewModel.kontakUIState,
-                retryAction = homeViewModel::getKontak
-            )
+            HomeScreen()
         }
 
     }
