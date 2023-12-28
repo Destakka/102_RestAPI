@@ -30,6 +30,10 @@ import com.example.pam_act8.ui.home.viewmodel.InsertViewModel
 import com.example.pam_act8.ui.home.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
+object DestinasiEntry : DestinasiNavigasi {
+    override val route = "item_entry"
+    override val titleRes = "Entry Siswa"
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
